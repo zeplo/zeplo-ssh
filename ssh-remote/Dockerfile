@@ -7,6 +7,6 @@ RUN mkdir -p /var/run/sshd
 COPY ./start.sh /start.sh
 RUN chmod +x /start.sh
 
-ENV SSH_PORT 22
+ENV SSH_SERVER_PORT 22
 
 CMD ["/start.sh"]

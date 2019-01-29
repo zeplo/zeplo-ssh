@@ -7,7 +7,7 @@ mkdir -p /root/.ssh/
 echo $PUBLIC_SSH_KEY >> /root/.ssh/authorized_keys
 
 # Start SSHD
-/usr/sbin/sshd -D -p $SSH_PORT
+/usr/sbin/sshd -D -p $SSH_SERVER_PORT
 
 # Prevent exit
 tail -f /dev/null

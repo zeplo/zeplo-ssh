@@ -13,7 +13,7 @@ This repo contains two Docker images that work together to create an SSH tunnel 
 ### ssh-sidecar
 
 ```
-docker pull zeplo/ssh-sidecar
+docker pull zeplo/ssh-sidecar:v1.0.1
 ```
 
 Accepts the following environment vars:
@@ -32,11 +32,13 @@ Accepts the following environment vars:
 ### ssh-remote
 
 ```
-docker pull zeplo/ssh-remote
+docker pull zeplo/ssh-remote:v1.0.2
 ```
 
 Accepts the following environment vars:
 
 | Name  | Default | Desc |
 |:---- |:-------- |:-------------------------- |
-| PUBLIC_SSH_KEY | - | **Required** Public SSH key that matches the `ssh-sidecar` public key |
+| PUBLIC_SSH_KEY | - | **Required** Public SSH key that matches
+ the `ssh-sidecar` public key |
+| SSH_SERVER_PORT | 22 | Port that the server listens for incoming connections. You may need to use an alternative port number if you are exposing this server on the host (as port `22` will already be in use).
