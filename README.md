@@ -2,15 +2,19 @@
 
 This repo contains two Docker images that work together to create an SSH tunnel from a Zeplo service to an external service.
 
- * ssh-sidecar - should be run inside of Zeplo (as a sidecar) to forward traffic to an external service
+ * [ssh-sidecar](https://cloud.docker.com/u/zeplo/repository/docker/zeplo/ssh-sidecar) - should be run inside of Zeplo (as a sidecar) to forward traffic to an external service
 
- * ssh-remote - should be run on an external host to allow a tunnel to be created within a Docker/Kubernetes environment
+ * [ssh-remote](https://cloud.docker.com/u/zeplo/repository/docker/zeplo/ssh-remote) - should be run on an external host to allow a tunnel to be created within a Docker/Kubernetes environment
 
 
  Full instructions on how to use these images can be found at [Zeplo Docs - Connecting to External Services](https://zeplo.io/docs/external-services).
 
 
 ### ssh-sidecar
+
+```
+docker pull zeplo/ssh-sidecar
+```
 
 Accepts the following environment vars:
 
@@ -26,6 +30,10 @@ Accepts the following environment vars:
 
 
 ### ssh-remote
+
+```
+docker pull zeplo/ssh-remote
+```
 
 Accepts the following environment vars:
 
