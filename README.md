@@ -39,6 +39,5 @@ Accepts the following environment vars:
 
 | Name  | Default | Desc |
 |:---- |:-------- |:-------------------------- |
-| PUBLIC_SSH_KEY | - | **Required** Public SSH key that matches
- the `ssh-sidecar` public key |
+| PUBLIC_SSH_KEY | - | **Required** Public SSH key that matches the `ssh-sidecar` public key |
 | SSH_SERVER_PORT | 22 | Port that the server listens for incoming connections. You may need to use an alternative port number if you are exposing this server on the host (as port `22` will already be in use).
